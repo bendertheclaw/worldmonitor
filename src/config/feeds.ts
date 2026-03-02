@@ -206,6 +206,14 @@ export const SOURCE_TIERS: Record<string, number> = {
   'in.gr': 3,
   'iefimerida': 3,
   'Proto Thema': 3,
+  // Kazakh (KK)
+  'Tengrinews': 2,
+  'Informburo': 2,
+  'Zakon.kz': 2,
+  'KazTAG': 2,
+  'Nur.kz': 2,
+  'Kazakhstan News': 3,
+  'Central Asia': 3,
 
   // Tier 3 - Think Tanks
   'Brookings Tech': 3,
@@ -701,6 +709,15 @@ const FULL_FEEDS: Record<string, Feed[]> = {
     { name: 'Guardian Australia', url: rss('https://www.theguardian.com/australia-news/rss') },
     // Pacific Islands
     { name: 'Island Times (Palau)', url: rss('https://islandtimes.org/feed/') },
+    // Kazakhstan
+    { name: 'Tengrinews', url: rss('https://tengrinews.kz/rss/'), lang: 'kk' },
+    { name: 'Informburo', url: rss('https://informburo.kz/feed.rss'), lang: 'kk' },
+    { name: 'Zakon.kz', url: rss('https://www.zakon.kz/rss/'), lang: 'kk' },
+    { name: 'KazTAG', url: rss('https://kaztag.kz/feed/'), lang: 'kk' },
+    { name: 'Nur.kz', url: rss('https://www.n.kz/feed/'), lang: 'kk' },
+    // Kazakhstan General (English/Russian via Google News)
+    { name: 'Kazakhstan News', url: rss('https://news.google.com/rss/search?q=Kazakhstan+news+OR+Astana+OR+Almaty+when:2d&hl=en-US&gl=US&ceid=US:en') },
+    { name: 'Central Asia', url: rss('https://news.google.com/rss/search?q=(Kazakhstan+OR+Uzbekistan+OR+Kyrgyzstan+OR+Tajikistan+OR+Turkmenistan)+when:3d&hl=en-US&gl=US&ceid=US:en') },
   ],
   energy: [
     { name: 'Oil & Gas', url: rss('https://news.google.com/rss/search?q=(oil+price+OR+OPEC+OR+"natural+gas"+OR+pipeline+OR+LNG)+when:2d&hl=en-US&gl=US&ceid=US:en') },
